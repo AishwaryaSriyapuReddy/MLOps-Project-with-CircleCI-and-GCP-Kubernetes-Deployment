@@ -5,13 +5,13 @@
 - 📊 [Architecture](#architecture)
 - ⚙️ [Tech Stack](#tech-stack)
 - 📁 Project Structure
-- 🔄 [CI/CD Pipeline Stages](#ci/cd-pipeline-stages)
+- 🔄 [CI/CD Pipeline Stages](#ci-cd-pipeline-stages)
 - 📦 Setup Instructions
 - 🚀 How to Run
 - 📈 MLFlow Tracking
 - 🔐 Model Deployment
 - 🧪 Testing
-- 📝 Future Enhancements
+- 📝 [Future Enhancements](#future-enhancements)
 
 
 ## Project Overview
@@ -62,3 +62,10 @@ Apply Kubernetes manifests to deploy the app to a cluster.
 
 7. Expose via LoadBalancer  
 The app is made available at a public IP endpoint.
+
+
+## Future Enhancements
+- Add ML model versioning using MLflow or DVC
+- Integrate monitoring/logging via Prometheus + Grafana
+- Add a frontend interface for predictions
+- Support multi-environment (dev/staging/prod) deployments
