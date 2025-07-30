@@ -6,6 +6,7 @@
 - ⚙️ [Tech Stack](#tech-stack)
 - 📁 Project Structure
 - 🔄 [CI/CD Pipeline Stages](#ci-cd-pipeline-stages)
+- [Project Workflow](#project-workflow)
 - 📦 Setup Instructions
 - 🚀 How to Run
 - 🔐 Model Deployment
@@ -50,6 +51,33 @@ This project follows a modern CI/CD-based MLOps architecture powered by CircleCI
 7. Expose via LoadBalancer : The app is made available at a public IP endpoint.
 
 Pipelines can be triggered manually or automatically on code pushes.
+
+## Project Workflow
+
+1. **Project Setup**
+   - Create virtual environments and install dependencies (e.g., pandas, numpy, matplotlib).
+   - Organize project structure with folders like `src`, `pipeline`, and `artifacts`.
+
+2. **Jupyter Notebook Testing**
+   - Perform data processing, model training, and model selection interactively in a notebook.
+
+3. **Modular Code Development**
+   - Convert notebook steps into modular code using classes and methods for better maintainability.
+
+4. **User Application**
+   - Build a simple user interface using Flask and basic HTML (optionally styled with ChatGPT).
+
+5. **Training Pipeline**
+   - Combine data processing and model training into a single Python script for streamlined execution.
+
+6. **Versioning**
+   - Use GitHub for data and code versioning (suitable for small datasets).
+   - Optionally use DVC for large datasets.
+
+7. **Google Cloud Setup**
+   - Create a Kubernetes cluster on GCP.
+   - Set up artifact repositories and service accounts with necessary permissions.
+   - Enable required GCP APIs.
 
 ## Future Enhancements
 - Add ML model versioning using MLflow or DVC
