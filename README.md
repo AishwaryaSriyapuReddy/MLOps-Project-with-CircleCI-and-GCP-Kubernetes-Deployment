@@ -2,7 +2,7 @@
 
 ## Table of Contents
 - 📌 [Project Overview](#project-overview)
-- 📊 Architecture
+- 📊 [Architecture](#architecture)
 - ⚙️ Tech Stack
 - 📁 Project Structure
 - 🔄 Pipeline Stages
@@ -24,5 +24,7 @@ This MLOps project implements an end-to-end machine learning pipeline, from data
 - 🔁 CI/CD with **CircleCI**
 - 🔒 Versioning via **GitHub**
 
-
+## Architecture 
+This project follows a modern CI/CD-based MLOps architecture powered by CircleCI, Docker, and Google Kubernetes Engine (GKE).
+<img width="7623" height="600" alt="image" src="https://github.com/user-attachments/assets/b8529820-09ba-42fc-be80-df5dfb15f5a2" />
 
