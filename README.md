@@ -1,4 +1,4 @@
-# End-to-End MLOps Pipeline with Circle CI and GCP Kubernetes Deployment
+# Model Deployment on GCP using CircleCI & Kubernetes
 
 ## Table of Contents
 - 📌 [Project Overview](#project-overview)
@@ -15,14 +15,12 @@
 
 
 ## Project Overview
-This MLOps project implements an end-to-end machine learning pipeline, from data ingestion to model deployment, using modern MLOps tools. The pipeline includes:
-- ✅ Model development and testing in **Jupyter Notebook**
-- 🛠️ Modular refactoring into Python classes
-- 🌐 Flask-based user-friendly web interface
-- 🐳 Docker containerization
-- ☁️ Deployment on GCP's **Kubernetes Cluster (GKE)**
-- 🔁 CI/CD with **CircleCI**
-- 🔒 Versioning via **GitHub**
+This project demonstrates an end-to-end MLOps pipeline where a machine learning model is containerized and deployed using:
+- Flask (as an API server),
+- Docker (for containerization),
+- CircleCI (for CI/CD),
+- GCP's GCR and GKE (for container hosting and orchestration).
+The model is exposed through a public endpoint using a LoadBalancer service in Kubernetes.
 
 ## Architecture 
 This project follows a modern CI/CD-based MLOps architecture powered by CircleCI, Docker, and Google Kubernetes Engine (GKE).
@@ -43,4 +41,24 @@ This project follows a modern CI/CD-based MLOps architecture powered by CircleCI
 | **Google Kubernetes Engine (GKE)**  | Manages Kubernetes cluster for deploying containerized apps |
 | **Google Container Registry (GCR)** | Stores and manages Docker images used in deployment         |
 
+## CI/CD Pipeline Stages
+1. Checkout Code
+Fetch the latest code from GitHub.
 
+2. Install Dependencies
+Install all Python packages from requirements.txt.
+
+3. Run Tests / Linting (optional)
+Perform code quality checks or run test suites.
+
+4. Build Docker Image
+Create an image using the Dockerfile.
+
+5. Push to GCR
+Push the image to Google Container Registry.
+
+6. Deploy to GKE
+Apply Kubernetes manifests to deploy the app to a cluster.
+
+7. Expose via LoadBalancer
+The app is made available at a public IP endpoint.
