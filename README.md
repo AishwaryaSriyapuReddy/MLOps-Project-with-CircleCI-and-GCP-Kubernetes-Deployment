@@ -1,7 +1,7 @@
 # End-to-End MLOps Pipeline with Circle CI and GCP Kubernetes Deployment
 
 ## Table of Contents
-- 📌 [Project Overview]()
+- 📌 [Project Overview](##project-overview)
 - 📊 Architecture
 - ⚙️ Tech Stack
 - 📁 Project Structure
