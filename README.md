@@ -65,7 +65,7 @@ Pipelines can be triggered manually or automatically on code pushes.
    - Convert notebook steps into modular code using classes and methods for better maintainability.
 
 4. **User Application**
-   - Build a simple user interface using Flask and basic HTML (optionally styled with ChatGPT).
+   - Build a simple user interface using Flask and basic HTML.
 
 5. **Training Pipeline**
    - Combine data processing and model training into a single Python script for streamlined execution.
