@@ -3,7 +3,7 @@
 ## Table of Contents
 - 📌 [Project Overview](#project-overview)
 - 📊 [Architecture](#architecture)
-- ⚙️ Tech Stack
+- ⚙️ [Tech Stack](#tech-stack)
 - 📁 Project Structure
 - 🔄 Pipeline Stages
 - 📦 Setup Instructions
