@@ -36,7 +36,7 @@ This project follows a modern CI/CD-based MLOps architecture powered by CircleCI
 | **Flask**                           | Lightweight web framework to serve the model as an API      |
 | **Docker**                          | Containerization of the Flask app for consistent deployment |
 | **CircleCI**                        | Automates build, test, and deployment steps (CI/CD)         |
-| **GitHub**                          | Source code and version control                             |
+| **GitHub**                          | Source code Management and for data version control                             |
 | **Google Cloud Platform (GCP)**     | Cloud service provider to host and run the infrastructure   |
 | **Google Kubernetes Engine (GKE)**  | Manages Kubernetes cluster for deploying containerized apps |
 | **Google Container Registry (GCR)** | Stores and manages Docker images used in deployment         |
@@ -70,7 +70,7 @@ Pipelines can be triggered manually or automatically on code pushes.
 5. **Training Pipeline**
    - Combine data processing and model training into a single Python script for streamlined execution.
 
-6. **Versioning**
+6. **Data and Code Versioning**
    - Use GitHub for data and code versioning (suitable for small datasets).
    - Optionally use DVC for large datasets.
 
