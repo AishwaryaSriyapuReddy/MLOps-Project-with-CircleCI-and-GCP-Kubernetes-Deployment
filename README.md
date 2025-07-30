@@ -41,27 +41,15 @@ This project follows a modern CI/CD-based MLOps architecture powered by CircleCI
 | **Google Container Registry (GCR)** | Stores and manages Docker images used in deployment         |
 
 ## CI/CD Pipeline Stages
-1. Checkout Code  
-Fetch the latest code from GitHub.
+1. **Checkout** Code : Fetch the latest code from GitHub.
+2. Install Dependencies/Python packages from requirements.txt.
+3. Run Tests / Linting (optional):  Perform code quality checks or run test suites.
+4. **Build** Docker Image using the Dockerfile.
+5. **Push** the image to Google Container Registry.
+6. **Deploy** the Docker images/app to Google Kubernetes Engine (GKE) cluster.
+7. Expose via LoadBalancer : The app is made available at a public IP endpoint.
 
-2. Install Dependencies  
-Install all Python packages from requirements.txt.
-
-3. Run Tests / Linting (optional)  
-Perform code quality checks or run test suites.
-
-4. Build Docker Image  
-Create an image using the Dockerfile.
-
-5. Push to GCR  
-Push the image to Google Container Registry.
-
-6. Deploy to GKE  
-Apply Kubernetes manifests to deploy the app to a cluster.
-
-7. Expose via LoadBalancer  
-The app is made available at a public IP endpoint.
-
+Pipelines can be triggered manually or automatically on code pushes.
 
 ## Future Enhancements
 - Add ML model versioning using MLflow or DVC
