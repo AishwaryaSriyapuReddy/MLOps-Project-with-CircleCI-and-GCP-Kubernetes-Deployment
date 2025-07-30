@@ -8,7 +8,6 @@
 - 🔄 [CI/CD Pipeline Stages](#ci-cd-pipeline-stages)
 - 📦 Setup Instructions
 - 🚀 How to Run
-- 📈 MLFlow Tracking
 - 🔐 Model Deployment
 - 🧪 Testing
 - 📝 [Future Enhancements](#future-enhancements)
