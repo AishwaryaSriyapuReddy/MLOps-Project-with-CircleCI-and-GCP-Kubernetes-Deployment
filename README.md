@@ -5,7 +5,7 @@
 - 📊 [Architecture](#architecture)
 - ⚙️ [Tech Stack](#tech-stack)
 - 📁 Project Structure
-- 🔄 Pipeline Stages
+- 🔄 [CI/CD Pipeline Stages](#ci/cd-pipeline-stages)
 - 📦 Setup Instructions
 - 🚀 How to Run
 - 📈 MLFlow Tracking
