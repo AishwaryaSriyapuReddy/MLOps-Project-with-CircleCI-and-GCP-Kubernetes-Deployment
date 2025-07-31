@@ -1,10 +1,10 @@
-version: 2.1 # CircleCI version
+version: 2.1
 
-executors:  #reusable environemnts for the jobs
-  docker-executor:  # means this executor - the app runs inside the docker
+executors:
+  docker-executor:
     docker:
       - image: google/cloud-sdk:latest
-    working_directory: ~/repo  #default working directory for the jobs
+    working_directory: ~/repo
 
 jobs:
   checkout_code:
@@ -13,13 +13,14 @@ jobs:
       - checkout
 
   build_docker_image:
-    machine: true #executor: docker-executor
+    executor: docker-executor
     steps:
-      - checkout #- setup_remote_docker
+      - checkout
+      - setup_remote_docker
       - run:
           name: Authenticate with google cloud
           command: |
-              echo "$GCLOUD_SERVICE_KEY" | base64 --decode > gcp-key.json 
+              echo "$GCLOUD_SERVICE_KEY" | base64 --decode > gcp-key.json
               gcloud auth activate-service-account --key-file=gcp-key.json
               gcloud auth configure-docker us-central1-docker.pkg.dev || gcloud auth configure-docker
 
@@ -30,19 +31,10 @@ jobs:
               docker push us-central1-docker.pkg.dev/$GOOGLE_PROJECT_ID/mlops-circleci-app/mlops-circleci-app:latest
 
   deploy_to_gke:
-    machine: true #executor: docker-executor
+    executor: docker-executor
     steps:
-      - checkout #- setup_remote_docker
-      - run:
-          name: Install kubectl
-          command: |
-              curl -LO "https://dl.k8s.io/release/v1.30.0/bin/linux/amd64/kubectl"
-              chmod +x kubectl
-              sudo mv kubectl /usr/local/bin/
-      - run:
-          name: Install gke-gcloud-auth-plugin
-          command: |
-              sudo apt-get update && sudo apt-get install -y google-cloud-sdk-gke-gcloud-auth-plugin
+      - checkout
+      - setup_remote_docker
       - run:
           name: Authenticate with google cloud
           command: |
