@@ -4,7 +4,6 @@
 - 📌 [Project Overview](#project-overview)
 - 📊 [Architecture](#architecture)
 - ⚙️ [Tech Stack](#tech-stack)
-- 📁 Project Structure
 - 🔄 [CI/CD Pipeline Stages](#ci-cd-pipeline-stages)
 - 📊[Project Workflow](#project-workflow)
 - 🧪 [CircleCI Pipeline Testing](#circleci-pipeline-testing)
