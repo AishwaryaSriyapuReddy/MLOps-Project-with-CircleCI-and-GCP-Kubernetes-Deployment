@@ -7,7 +7,8 @@
 - 📁 Project Structure
 - 🔄 [CI/CD Pipeline Stages](#ci-cd-pipeline-stages)
 - 📊[Project Workflow](#project-workflow)
-- 🧪 Testing
+- 🧪 [CircleCI Pipeline Testing](#circleci-pipeline-testing)
+- 🔄[Model Deployment](#model-deployment)
 - 📝 [Future Enhancements](#future-enhancements)
 
 
@@ -81,6 +82,21 @@ Pipelines can be triggered manually or automatically on code pushes.
    - Project Setup
    - Environment Variables Configuration
    - Test Pipeline with Manual Trigger and Automatic Trigger
+
+## CircleCI Pipeline Testing
+**Manual Trigger:**
+<img width="941" height="224" alt="image" src="https://github.com/user-attachments/assets/f70bc7b0-6708-4990-a104-61ba0f3035ae" />
+
+**Automatic Trigger:**
+<img width="942" height="187" alt="image" src="https://github.com/user-attachments/assets/6cbc62f6-339c-4640-b6c2-ef5d2fc9aafd" />
+
+## Model Deployment
+<img width="959" height="143" alt="image" src="https://github.com/user-attachments/assets/bcf4e04a-03de-421a-a8a5-ba32bf8a3145" />
+
+<img width="732" height="488" alt="image" src="https://github.com/user-attachments/assets/b458c327-cea2-4eea-9481-9aa6d88fcd55" />
+
+**Deployment with Prediction**
+<img width="626" height="464" alt="image" src="https://github.com/user-attachments/assets/a5812b05-37ec-497e-a84f-3d08e41719b9" />
 
 ## Future Enhancements
 - Add ML model versioning using MLflow or DVC
