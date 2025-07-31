@@ -7,9 +7,6 @@
 - 📁 Project Structure
 - 🔄 [CI/CD Pipeline Stages](#ci-cd-pipeline-stages)
 - 📊[Project Workflow](#project-workflow)
-- 📦 Setup Instructions
-- 🚀 How to Run
-- 🔐 Model Deployment
 - 🧪 Testing
 - 📝 [Future Enhancements](#future-enhancements)
 
