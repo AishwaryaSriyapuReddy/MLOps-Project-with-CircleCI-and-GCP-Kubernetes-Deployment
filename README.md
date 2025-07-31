@@ -83,7 +83,7 @@ Pipelines can be triggered manually or automatically on code pushes.
 8. **CircleCI Setup**
    - Project Setup
    - Environment Variables Configuration
-   - 
+   - Test Pipeline with Manual Trigger and Automatic Trigger
 
 ## Future Enhancements
 - Add ML model versioning using MLflow or DVC
