@@ -79,6 +79,11 @@ Pipelines can be triggered manually or automatically on code pushes.
    - Create a Kubernetes cluster on GCP.
    - Set up artifact repositories and service accounts with necessary permissions.
    - Create in vscode docker file, kubernetes deployment configuration file, CircleCI configuration file
+  
+8. **CircleCI Setup**
+   - Project Setup
+   - Environment Variables Configuration
+   - 
 
 ## Future Enhancements
 - Add ML model versioning using MLflow or DVC
