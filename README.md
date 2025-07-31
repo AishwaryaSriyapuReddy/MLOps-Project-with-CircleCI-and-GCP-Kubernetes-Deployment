@@ -75,9 +75,9 @@ Pipelines can be triggered manually or automatically on code pushes.
    - Optionally use DVC for large datasets.
 
 7. **Google Cloud Setup**
+   - Enable required GCP APIs.
    - Create a Kubernetes cluster on GCP.
    - Set up artifact repositories and service accounts with necessary permissions.
-   - Enable required GCP APIs.
    - Create in vscode docker file, kubernetes deployment configuration file, CircleCI configuration file
 
 ## Future Enhancements
