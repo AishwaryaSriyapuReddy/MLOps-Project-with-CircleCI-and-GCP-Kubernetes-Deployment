@@ -13,10 +13,9 @@ jobs:
       - checkout
 
   build_docker_image:
-    executor: docker-executor
+    machine: true #executor: docker-executor
     steps:
-      - checkout
-      - setup_remote_docker
+      - checkout #- setup_remote_docker
       - run:
           name: Authenticate with google cloud
           command: |
