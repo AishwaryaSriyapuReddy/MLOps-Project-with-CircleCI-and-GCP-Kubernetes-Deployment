@@ -18,6 +18,11 @@ jobs:
       - checkout
       - setup_remote_docker
       - run:
+          name: Install Docker CLI, kubectl & gke-gcloud-auth-plugin
+          command: |
+              apt-get update
+              apt-get install -y docker.io kubectl google-cloud-sdk-gke-gcloud-auth-plugin
+      - run:
           name: Authenticate with google cloud
           command: |
               echo "$GCLOUD_SERVICE_KEY" | base64 --decode > gcp-key.json
