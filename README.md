@@ -95,6 +95,8 @@ Pipelines can be triggered manually or automatically on code pushes.
 
 <img width="732" height="488" alt="image" src="https://github.com/user-attachments/assets/b458c327-cea2-4eea-9481-9aa6d88fcd55" />
 
+
+
 **Deployment with Prediction**  
 <img width="626" height="464" alt="image" src="https://github.com/user-attachments/assets/a5812b05-37ec-497e-a84f-3d08e41719b9" />
 
