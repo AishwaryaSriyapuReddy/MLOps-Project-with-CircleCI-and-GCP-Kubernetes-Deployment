@@ -26,14 +26,13 @@ jobs:
       - run:
           name: Build and Push Image
           command: |
-              docker build -t us-central1-docker.pkg.dev/$GOOGLE_PROJECT_ID/mlops-app/mlops-app:latest .
-              docker push us-central1-docker.pkg.dev/$GOOGLE_PROJECT_ID/mlops-app/mlops-app:latest
+              docker build -t us-central1-docker.pkg.dev/$GOOGLE_PROJECT_ID/mlops-circleci-app/mlops-circleci-app:latest .
+              docker push us-central1-docker.pkg.dev/$GOOGLE_PROJECT_ID/mlops-circleci-app/mlops-circleci-app:latest
 
   deploy_to_gke:
-    executor: docker-executor
+    machine: true #executor: docker-executor
     steps:
-      - checkout
-      - setup_remote_docker
+      - checkout #- setup_remote_docker
       - run:
           name: Authenticate with google cloud
           command: |
